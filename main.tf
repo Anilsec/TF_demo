@@ -13,6 +13,9 @@ resource "aws_subnet" "private" {
   cidr_block        = "10.0.1.0/24"
   availability_zone = "eu-central-1"
   map_public_ip_on_launch = false
+  AWS_KEY = "password = sdfdsfdsdfsf-dsfdsf-sdfds-sd-sdfsdf-sdfsd-fdsdsd" 
+  Access_KEY_secret = 'ASIA899849874938' 
+  Access_Key_ID = "AKIA5678911234567891" 
 }
 
 # Creating an Internet Gateway
