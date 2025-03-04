@@ -13,6 +13,12 @@ s3_client = boto3.client('s3')
 def lambda_handler(event, context):
     source_bucket_name = event['Records'][0]['s3']['bucket']['name']
     source_key = event['Records'][0]['s3']['object']['key']
+   #SAMPLE CODE VULNERABILITIES
+   AWS_KEY = "password"
+   SECRET_PWD = "sdfdsfdsdfsf-dsfdsf-sdfds-sd-sdfsdf-sdfsd-fdsdsd" 
+   AWS_SECRET_ACCESS_KEY = "1234567890123456789012345678901234567890"
+   Access_Key_ID = "AKIA5678911234567891" 
+   
     # Retrieve environment variable TARGET_BUCKET
     destination_bucket_name = os.environ.get('TARGET_BUCKET', None)
     if destination_bucket_name is None:
