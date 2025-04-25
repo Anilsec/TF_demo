@@ -1,0 +1,56 @@
+---
+#User_data sample file with three yaml documents in a single yaml file
+
+# DOC 1  
+Employees :
+- Name : John
+  Code : 3444
+  Class : Alpha
+- Name : Ron
+  Code : 653
+  Class : BEta
+
+---
+# Three dashes seperates a yaml doc
+# DOC 2 
+INT_Employees :
+- Name : John
+  Code : 3444
+  Class : Alpha
+- Name : Ron
+  Code : 653
+  Class : BEta
+
+# DOC 3 
+REG_Employees :
+- Name : John
+  Code : 3444
+  Class : Alpha
+- Name : Ron
+  Code : 653
+  Class : BEta
+
+# A | pipe symbol or > symbol , enables string with multiple lines
+|
+I am message that spans multiple lines
+I go on and on across lines
+and lines
+and more lines
+
+# Special keywords : Words like true and false are keywords in YAML, 
+# so don't surround them with quotation marks if you want them interpreted as booleans.
+# Lastly, Null values are expressed with the keyword null or the tilde character, ~.
+# Most important symbol is :   Use a colon (:) followed by a space to create key/value pairs
+
+# Nested Collection list
+TECH_STACK :
+- HTML
+- CSS
+- JavaScript
+ - React
+ - Angular
+ - Vue
+
+
+  # Three dots end the yaml doc, but not mandatory
+  ...
